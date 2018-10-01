@@ -7,6 +7,9 @@
       <h3>UUID: {{user.id}}</h3>
       <h3>Page: {{$route.path}}</h3>
     </div>
+    <div class="user-image">
+      <img :src="user.img"/>
+    </div>
   </div>
 </template>
 
@@ -41,15 +44,31 @@ export default {
 <style>
 .user-box {
   margin: auto;
-  width: 50%;
-  border: 3px solid green;
+  width: 40%;
+  height: 300px;
   padding: 10px;
   margin-top: 20px;
+  border: 3px solid green;
 }
 h1 {
   margin: 20px 10px;
 }
 h3 {
   margin: 10px;
+}
+.user-details {
+  width: 50%;
+  float: left;
+}
+.user-image {
+  float: right;
+  width: 50%;
+  height: 250px;
+  margin: auto;
+}
+.user-image img {
+  width: 200px;
+  float: right;
+  margin: 35px;
 }
 </style>
