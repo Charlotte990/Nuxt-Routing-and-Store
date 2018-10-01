@@ -25,7 +25,7 @@ import { mapState } from 'vuex'
 export default {
   computed: {
     ...mapState('users', {
-      users: state => state.users,
+      users: state => state.users
   })
   },
   components: {

@@ -5,6 +5,7 @@
       <h3>Name: {{user.name}}</h3>
       <h3>Age: {{user.age}}</h3>
       <h3>UUID: {{user.id}}</h3>
+      <h3>Page: {{$route.path}}</h3>
     </div>
   </div>
 </template>
@@ -31,7 +32,7 @@ export default {
   },
   computed: {
     ...mapState('users', {
-      user: state => state.user,
+      user: state => state.user
     })
   }
 }
